@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="roomba560_node" pkg="roomba_500_series" type="roomba560_node">
+    <param name="port" value="type=bt,deviceid=00:06:66:02:CE:12"/>
+  </node>
+</launch>
