@@ -55,7 +55,8 @@
 /*! \class GoDock GoDock.h "inc/GoDock.h"
  *  \brief C++ class for the ROS GoDockAction action server.
  *
- * This sends the Roomba to the dock, obviously. Notice that if you are using move_base to move your Roomba you must cancel any existing goals or else move_base will try to move the Roomba while it tries to dock.
+ * This sends the Roomba to the dock, obviously. 
+ * Notice that if you are using move_base to move your Roomba you must cancel any existing goals or else move_base will try to move the Roomba while it tries to dock.
  */
 class GoDockAction
 {

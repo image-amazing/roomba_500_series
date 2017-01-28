@@ -289,7 +289,8 @@ namespace irobot
 	/*! \class OpenInterface OpenInterface.h "inc/OpenInterface.h"
 	 *  \brief C++ class implementation of the iRobot OI.
 	 *
-	 * This class implements the iRobot Open Interface protocolor as described by iRobot. Based on the Player Roomba driver writen by Brian Gerkey.
+	 * This class implements the iRobot Open Interface protocol as described by iRobot. 
+     * Based on the Player Roomba driver writen by Brian Gerkey.
 	 */
 	class OpenInterface
 	{
@@ -320,7 +321,8 @@ namespace irobot
 	
 		//! Set sensor packets
 		/*!
-		*  Set the sensor packets one wishes to read from the roomba. By default the constructor will set the Roomba to read only the encoder counts (for odometry). 
+		*  Set the sensor packets one wishes to read from the roomba. 
+        *  By default the constructor will set the Roomba to read only the encoder counts (for odometry). 
 		*
 		*  \param new_sensor_packets  	Array of sensor packets to read.
 		*  \param new_num_of_packets  	Number of sensor packets in the array.
@@ -331,7 +333,8 @@ namespace irobot
 		int setSensorPackets(OI_Packet_ID * new_sensor_packets, int new_num_of_packets, size_t new_buffer_size);
 		//! Read sensor packets
 		/*!
-		*  Requested the defined sensor packets from the Roomba. If you need odometry and you requested encoder data you need to call calculateOdometry() afterwords.
+		*  Requested the defined sensor packets from the Roomba.
+        *  If you need odometry and you requested encoder data you need to call calculateOdometry() afterwords.
 		*
 		*  \param timeout		Timeout in milliseconds.
 		*
@@ -642,7 +645,7 @@ namespace irobot
 	
 		//! Serial port to which the robot is connected
 		std::string port_name_;
-		//! Cereal port object
+		//! Flexiport port object
         flexiport::Port* serial_port_;
 
 		//! Stream variable. NOT TESTED
